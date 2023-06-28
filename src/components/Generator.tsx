@@ -31,7 +31,7 @@ export default () => {
 
     try {
       if (sessionStorage.getItem('messageList'))
-        setMessageList(JSON.parse(sessionStorage.getItem('messageList')))
+        // setMessageList(JSON.parse(sessionStorage.getItem('messageList')))
 
       if (sessionStorage.getItem('systemRoleSettings'))
         setCurrentSystemRoleSettings(sessionStorage.getItem('systemRoleSettings'))
