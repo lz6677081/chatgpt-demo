@@ -5,6 +5,7 @@ import IconClear from './icons/Clear'
 import MessageItem from './MessageItem'
 import SystemRoleSettings from './SystemRoleSettings'
 import ErrorMessageItem from './ErrorMessageItem'
+import Donation from './Donation'
 import type { ChatMessage, ErrorMessage } from '@/types'
 
 export default () => {
@@ -31,10 +32,12 @@ export default () => {
 
     try {
       if (sessionStorage.getItem('messageList'))
-        // setMessageList(JSON.parse(sessionStorage.getItem('messageList')))
+      // setMessageList(JSON.parse(sessionStorage.getItem('messageList')))
 
-      if (sessionStorage.getItem('systemRoleSettings'))
-        setCurrentSystemRoleSettings(sessionStorage.getItem('systemRoleSettings'))
+      {
+        if (sessionStorage.getItem('systemRoleSettings'))
+          setCurrentSystemRoleSettings(sessionStorage.getItem('systemRoleSettings'))
+      }
 
       if (localStorage.getItem('stickToBottom') === 'stick')
         setStick(true)
@@ -199,7 +202,10 @@ export default () => {
   }
 
   return (
-    <div my-6>
+    <div my-3>
+
+      <Donation /><br />
+
       <Index each={messageList()}>
         {(message, index) => (
           <MessageItem
