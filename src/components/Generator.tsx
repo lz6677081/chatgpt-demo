@@ -204,7 +204,7 @@ export default () => {
   return (
     <div my-3>
 
-      <Donation /><br />
+      <Donation />
 
       <Index each={messageList()}>
         {(message, index) => (
