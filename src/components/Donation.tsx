@@ -30,7 +30,7 @@ export default () => {
           <span class="border-1 px-2 py-1 mx-1 rounded-md transition-colors bg-slate/20 cursor-pointer hover:bg-slate/50">捐赠</span>
           <span>🙏🏻</span>
         </p>
-        <p mt-1 text-xs op-60>感谢 匿名,匿名,M,姜*凡,E*s,二*三,SK**明 的捐赠</p>
+        <p mt-1 text-xs op-60>感谢 匿名,匿名,M,姜*凡,E*s,二*三,SK**明,匿名,Li**He 的捐赠</p>
         <Show when={info().request_count > 0}>
           <p mt-3 text-xs op-60>本站共处理{info().request_count}次问答,消耗{(info().used_quota / 1000).toFixed(1)}K≈${(info().used_quota / 500000).toFixed(1)} token</p>
         </Show>
