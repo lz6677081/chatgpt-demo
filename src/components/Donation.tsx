@@ -39,7 +39,7 @@ export default () => {
         <div>
           <div mt-4>
             <span op-60>使用微信扫一扫</span>
-            <img class="w-3/5 mt-2 max-w-[250px]" src="https://gzgptnb.oss-cn-guangzhou.aliyuncs.com/chatphp/202307/1690812533321.jpg" />
+            <img class="w-4/5 mt-2 max-w-[300px]" src="https://gzgptnb.oss-cn-guangzhou.aliyuncs.com/chatphp/202307/1690812533321.jpg" />
           </div>
 
           <button onClick={() => { setShow(0) }} class="w-1/3 h-12 mt-2 px-4 py-2 bg-slate bg-op-15 hover:bg-op-20 rounded-sm">
