@@ -30,7 +30,7 @@ export default () => {
           <span class="border-1 px-2 py-1 mx-1 rounded-md transition-colors bg-slate/20 cursor-pointer hover:bg-slate/50">捐赠</span>
           <span>🙏🏻</span>
         </p>
-        <p mt-1 text-xs op-60>感谢 匿名,匿名,M,姜*凡,E*s,二*三,SK**小明,匿名,Li**He,匿名,我被**包围了,匿名,你你你,雷,太阳保安,达不溜,Fe*ix,我叫孔子,neko**6z,巉巉,【那一段回忆、*】,匿名,缥缈,我在故我思,贰拾叁かい,zzzzy,匿名,Axis,腥白吆,C-c.匿名,减少期待,192.168.0.1,匿名,SD,星月弥天,Eurek4,哈哈,匿名 的捐赠 <span gpt-subtitle text-xs>感谢B站UP主:叫憨子吧的推荐</span></p>
+        <p mt-1 text-xs op-60>感谢 匿名,匿名,M,姜*凡,E*s,二*三,SK**小明,匿名,Li**He,匿名,我被**包围了,匿名,你你你,雷,太阳保安,达不溜,Fe*ix,我叫孔子,neko**6z,巉巉,【那一段回忆、*】,匿名,缥缈,我在故我思,贰拾叁かい,zzzzy,匿名,Axis,腥白吆,C-c.匿名,减少期待,192.168.0.1,匿名,SD,星月弥天,Eurek4,哈哈,匿名,匿名 的捐赠 <span gpt-subtitle text-xs>感谢B站UP主:叫憨子吧的推荐</span></p>
 
         <Show when={info().request_count > 0}>
           <p mt-3 text-xs op-60>本站共处理{info().request_count}次问答,消耗{(info().used_quota / 1000).toFixed(1)}K≈${(info().used_quota / 500000).toFixed(1)} token</p>
