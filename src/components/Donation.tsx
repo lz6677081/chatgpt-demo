@@ -43,6 +43,8 @@ export default () => {
             <img class="w-4/5 mt-2 max-w-[300px]" src="https://gzgptnb.oss-cn-guangzhou.aliyuncs.com/chatphp/202307/1690812533321.jpg" />
           </div>
 
+          <div mt-2 op-60>感谢您的支持! <br />发送任意内容到 <a gpt-subtitle text-xs href="mailto:free2gpt@gmail.com">free2gpt@gmail.com</a> 可订阅最新地址</div>
+
           <button onClick={() => { setShow(0) }} class="w-1/3 h-12 mt-2 px-4 py-2 bg-slate bg-op-15 hover:bg-op-20 rounded-sm">
             关闭
           </button>
