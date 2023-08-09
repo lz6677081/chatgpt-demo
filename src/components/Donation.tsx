@@ -36,7 +36,7 @@ export default () => {
           op-60
           w-full
           class={show() === 0 ? 'line-clamp-2' : ''}
-        >感谢捐赠 <span gpt-subtitle text-xs>匿名x14,Su_XH,菲小羊,rumia,星月弥天,192.168.0.1,M</span>,暖暖,一人一,Yuang,头绿心黄大菠萝OvO,菲小羊,吕刑褶,MYBEA***ASY,学习,姜*凡,E*s,二*三,SK**小明,Li**He,我被**包围了,你你你,雷,太阳保安,达不溜,Fe*ix,我叫孔子,neko**6z,巉巉,【那一段回忆、*】,缥缈,我在故我思,贰拾叁かい,zzzzy,Axis,腥白吆,C-c.减少期待,SD,Eurek4,哈哈,夏之星,chopsticks0253,I'm fine!,菲小羊,云,乏味,玖玖Rae
+        >感谢捐赠 <span gpt-subtitle text-xs>匿名x15,Su_XH,菲小羊,rumia,星月弥天,192.168.0.1,M</span>王越泽,天气日记,我的喵.cn,暖暖,一人一,Yuang,头绿心黄大菠萝OvO,菲小羊,吕刑褶,MYBEA***ASY,学习,姜*凡,E*s,二*三,SK**小明,Li**He,我被**包围了,你你你,雷,太阳保安,达不溜,Fe*ix,我叫孔子,neko**6z,巉巉,【那一段回忆、*】,缥缈,我在故我思,贰拾叁かい,zzzzy,Axis,腥白吆,C-c.减少期待,SD,Eurek4,哈哈,夏之星,chopsticks0253,I'm fine!,菲小羊,云,乏味,玖玖Rae
         </p>
         <p mt-2 class={show() === 0 ? 'hidden' : ''} gpt-subtitle text-xs>感谢B站UP主:叫憨子吧,木木子灵的推荐</p>
 
@@ -51,7 +51,11 @@ export default () => {
             <img class="w-4/5 mt-2 max-w-[300px]" src="https://gzgptnb.oss-cn-guangzhou.aliyuncs.com/chatphp/202307/1690812533321.jpg" />
           </div>
 
-          <div mt-2 op-60>感谢您的支持! <br />发送任意内容到 <a gpt-subtitle text-xs href="mailto:free2gpt@gmail.com">free2gpt@gmail.com</a> 可订阅最新地址</div>
+          <div mt-2 op-60>
+            感谢您的支持! <br />
+            发送任意内容到 <a gpt-subtitle text-xs href="mailto:free2gpt@gmail.com">free2gpt@gmail.com</a> 可订阅最新地址<br />
+            亦可通过该邮箱联系我们
+          </div>
 
           <button onClick={() => { setShow(0) }} class="w-1/3 h-12 mt-2 px-4 py-2 bg-slate bg-op-15 hover:bg-op-20 rounded-sm">
             关闭
