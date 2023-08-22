@@ -36,7 +36,7 @@ export default () => {
           op-60
           w-full
           class={show() === 0 ? 'line-clamp-2' : ''}
-        >感谢捐赠 <span gpt-subtitle text-xs>匿名x35,菲小羊x5,Su_XH,蔡晨威,Z,rumia,星月弥天,192.168.0.1,M,</span>Accelerator,宥季,Ss🧸,RoR,Chrissie,Y,koil,samuraidog,心碎土豆丝,灼逝年华 阿康,.,海洋,龙王,凡死了.,LKJ,会游泳的鱼,七弦万木,随便你,随便你,路西法,蒂和平,🤐,长安.,学习,燚焱川,朱沐,麦芒,Joe,Melody,狐翎,方源,🍊,Wu Qiqian,天生猴子必有用,王越泽,天气日记,我的喵.cn,暖暖,一人一,Yuang,头绿心黄大菠萝OvO,菲小羊,吕刑褶,MYBEA***ASY,学习,姜*凡,E*s,二*三,SK**小明,Li**He,我被**包围了,你你你,雷,太阳保安,达不溜,Fe*ix,我叫孔子,neko**6z,巉巉,【那一段回忆、*】,缥缈,我在故我思,贰拾叁かい,zzzzy,Axis,腥白吆,C-c.减少期待,SD,Eurek4,哈哈,夏之星,chopsticks0253,I'm fine!,菲小羊,云,乏味,玖玖Rae
+        >感谢捐赠 <span gpt-subtitle text-xs>匿名x35,菲小羊x5,Su_XH,蔡晨威,Z,rumia,星月弥天,192.168.0.1,M,</span>Accelerator,宥季,RoR,Ss🧸,Chrissie,Y,koil,samuraidog,心碎土豆丝,灼逝年华 阿康,.,海洋,龙王,凡死了.,LKJ,会游泳的鱼,七弦万木,随便你,随便你,路西法,蒂和平,🤐,长安.,学习,燚焱川,朱沐,麦芒,Joe,Melody,狐翎,方源,🍊,Wu Qiqian,天生猴子必有用,王越泽,天气日记,我的喵.cn,暖暖,一人一,Yuang,头绿心黄大菠萝OvO,菲小羊,吕刑褶,MYBEA***ASY,学习,姜*凡,E*s,二*三,SK**小明,Li**He,我被**包围了,你你你,雷,太阳保安,达不溜,Fe*ix,我叫孔子,neko**6z,巉巉,【那一段回忆、*】,缥缈,我在故我思,贰拾叁かい,zzzzy,Axis,腥白吆,C-c.减少期待,SD,Eurek4,哈哈,夏之星,chopsticks0253,I'm fine!,菲小羊,云,乏味,玖玖Rae
         </p>
         <p mt-2 class={show() === 0 ? 'hidden' : ''} gpt-subtitle text-xs>感谢B站UP主:叫憨子吧,木木子灵的推荐</p>
 
