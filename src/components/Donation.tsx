@@ -47,7 +47,7 @@ export default () => {
         <p mt-2 class={show() === 0 ? 'hidden' : ''} gpt-subtitle text-xs>感谢B站UP主:叫憨子吧,木木子灵的推荐</p>
 
         <Show when={info().request_count > 0}>
-          <p mt-3 text-xs op-60>本站共处理{info().request_count}次问答,消耗{(info().used_quota / 1000).toFixed(1)}K≈${(info().used_quota / 500000).toFixed(1)} token</p>
+          <p mt-3 text-xs op-60>共处理{info().request_count}次,消耗{(info().used_quota / 1000).toFixed(1)}K≈${(info().used_quota / 500000).toFixed(1)} token</p>
         </Show>
       </div>
       <Show when={show() === 1}>
