@@ -26,17 +26,17 @@ export default () => {
     <div class="mt-2">
       <div onClick={() => { setShow(show() ? 0 : 1) }}>
         <p mt-1 text-sm op-60>
-          <span>为了能持久运营,我们需要你的</span>
+          <span>如果你觉得我们的服务有价值，请考虑打赏，帮助我们继续运营。谢谢！</span>
           <span class="border-1 px-2 py-1 mx-1 rounded-md transition-colors bg-slate/20 cursor-pointer hover:bg-slate/50">捐赠</span>
           <span>🙏🏻</span>
         </p>
-        <Show when={show() === 1}>
+         <Show when={show() === 1}>
           <div my-4>
             <span op-60>使用微信扫一扫</span>
-            <img class="w-4/5 mt-2 max-w-[300px]" src="https://gzgptnb.oss-cn-guangzhou.aliyuncs.com/chatphp/202307/1690812533321.jpg" />
+            <img class="w-4/5 mt-2 max-w-[300px]" src="https://jiyuimg.wzjo2o.com/WechatIMG27.jpeg" />
           </div>
         </Show>
-        <p
+        {/*<p
           mt-1
           text-xs
           op-60
@@ -48,9 +48,9 @@ export default () => {
 
         <Show when={info().request_count > 0}>
           <p mt-3 text-xs op-60>共处理{info().request_count}次,消耗{(info().used_quota / 1000).toFixed(1)}K≈${(info().used_quota / 500000).toFixed(1)} token</p>
-        </Show>
+        </Show> */}
       </div>
-      <Show when={show() === 1}>
+      {/* <Show when={show() === 1}>
         <div>
 
           <div mt-2 op-60>
@@ -63,7 +63,7 @@ export default () => {
             关闭
           </button>
         </div>
-      </Show>
+      </Show> */}
 
     </div>
   )
