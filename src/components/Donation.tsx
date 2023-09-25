@@ -53,7 +53,7 @@ export default () => {
       </div>
       <div onClick={() => { setZfb(zfb() ? 0 : 1) }}>
         <p mt-1 text-sm op-60>
-          <span>支付宝扫码领红包，帮助我们继续运营。谢谢！</span>
+          <span>请用支付宝扫码领红包，帮助我们继续运营。谢谢！</span>
           <span class="border-1 px-2 py-1 mx-1 rounded-md transition-colors bg-slate/20 cursor-pointer hover:bg-slate/50">捐赠</span>
           <span>🙏🏻</span>
         </p>
