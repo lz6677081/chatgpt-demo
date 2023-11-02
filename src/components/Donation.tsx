@@ -27,7 +27,7 @@ export default () => {
     <div class="mt-2">
       <div onClick={() => { setShow(show() ? 0 : 1) }}>
         <p mt-1 text-sm op-60>
-          <span>如果你觉得我们的服务有价值，请考虑打赏，帮助我们继续运营。谢谢！</span>
+          <span>由于近期openai封号严重，为了能长久运营下去,我们需要您的捐赠。谢谢！</span>
           <span class="border-1 px-2 py-1 mx-1 rounded-md transition-colors bg-slate/20 cursor-pointer hover:bg-slate/50">捐赠</span>
           <span>🙏🏻</span>
         </p>
