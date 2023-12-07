@@ -8,7 +8,7 @@ export default () => {
   const [zfb, setZfb] = createSignal(0)
 
   onMount(async() => {
-    getInfo()
+    // getInfo()
   })
 
   const getInfo = async() => {
@@ -31,13 +31,13 @@ export default () => {
           <span class="border-1 px-2 py-1 mx-1 rounded-md transition-colors bg-slate/20 cursor-pointer hover:bg-slate/50">捐赠</span>
           <span>🙏🏻</span>
         </p>
-         <Show when={show() === 1}>
+        <Show when={show() === 1}>
           <div my-4>
             <span op-60>使用微信扫一扫</span>
             <img class="w-4/5 mt-2 max-w-[300px]" src="https://jiyuimg.wzjo2o.com/WechatIMG27.jpeg" />
           </div>
         </Show>
-        {/*<p
+        {/* <p
           mt-1
           text-xs
           op-60
@@ -57,13 +57,13 @@ export default () => {
           <span class="border-1 px-2 py-1 mx-1 rounded-md transition-colors bg-slate/20 cursor-pointer hover:bg-slate/50">捐赠</span>
           <span>🙏🏻</span>
         </p>
-         <Show when={zfb() === 1}>
+        <Show when={zfb() === 1}>
           <div my-4>
             <span op-60>使用支付宝扫一扫</span>
             <img class="w-4/5 mt-2 max-w-[300px]" src="https://img.quanminzc.com/qmzc/202309/1695648323453.png" />
           </div>
         </Show>
-        {/*<p
+        {/* <p
           mt-1
           text-xs
           op-60
@@ -77,7 +77,7 @@ export default () => {
           <p mt-3 text-xs op-60>共处理{info().request_count}次,消耗{(info().used_quota / 1000).toFixed(1)}K≈${(info().used_quota / 500000).toFixed(1)} token</p>
         </Show> */}
       </div>
-      
+
     </div>
   )
 }
