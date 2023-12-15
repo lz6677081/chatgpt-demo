@@ -20,7 +20,14 @@ export default () => {
   const [isStick, setStick] = createSignal(false)
 
   createEffect(() => (isStick() && smoothToBottom()))
-
+  // 禁止调试
+  function stopDebugging() {
+    setInterval(() => {
+      debugger
+      console.clear()
+    }, 1000)
+  }
+  stopDebugging()
   onMount(() => {
     let lastPostion = window.scrollY
 
