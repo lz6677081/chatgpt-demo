@@ -36,7 +36,7 @@ export default () => {
       <div mt-6 text-xs>
         {/* <div op-60>当前在线人数:{online()}</div>
         <div op-60>近三个月访问人数:{lastMonth()}</div> */}
-        <div op-60>问题反馈或商务合作:<a gpt-subtitle="" text-sm="" href="mailto:wanglihong996@gmail.com">wanglihong996@gmail.com</a></div>
+        <div op-60>广告位招租OR问题反馈:<a gpt-subtitle="" text-sm="" href="mailto:wanglihong996@gmail.com">wanglihong996@gmail.com</a></div>
       </div>
     </footer>
   )
