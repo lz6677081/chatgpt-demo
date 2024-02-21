@@ -53,6 +53,18 @@ export const post: APIRoute = async(context) => {
     method: 'GET',
   })
 
+  fetch(`${import.meta.env.API_URL}/plugin/freesite/saveMessage`, {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    method: 'POST',
+    body: JSON.stringify({
+      ip: context.clientAddress,
+      message: messages,
+      site: 'aifree',
+    }),
+  })
+
   const res = await resp1.text()
   const resJson1 = JSON.parse(res)
   if (resJson1.code !== 200)
