@@ -53,7 +53,7 @@ export default () => {
       </div>
       <div>
         <p mt-1 text-sm op-60>
-          <span>独乐乐不如众乐乐,有知乎的大佬们帮站长点一下赞和关注,让更多的人看到这个网站</span>
+          <span>为了更好的运营下去,我们需要您的点赞和关注</span>
           <a target="_blank" href="https://zhuanlan.zhihu.com/p/684069595" class="border-1 px-2 py-1 mx-1 rounded-md transition-colors bg-slate/20 cursor-pointer hover:bg-slate/50" rel="noreferrer">知乎链接</a>
           <span>🙏🏻</span>
         </p>
