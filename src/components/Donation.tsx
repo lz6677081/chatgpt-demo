@@ -51,6 +51,14 @@ export default () => {
           <p mt-3 text-xs op-60>共处理{info().request_count}次,消耗{(info().used_quota / 1000).toFixed(1)}K≈${(info().used_quota / 500000).toFixed(1)} token</p>
         </Show> */}
       </div>
+      <div>
+        <p mt-1 text-sm op-60>
+          <span>独乐乐不如众乐乐,有知乎的大佬们帮站长点一下赞和关注,让更多的人看到这个网站</span>
+          <a target="_blank" href="https://zhuanlan.zhihu.com/p/684069595" class="border-1 px-2 py-1 mx-1 rounded-md transition-colors bg-slate/20 cursor-pointer hover:bg-slate/50" rel="noreferrer">知乎链接</a>
+          <span>🙏🏻</span>
+        </p>
+      </div>
+
       {/* <div onClick={() => { setZfb(zfb() ? 0 : 1) }}>
         <p mt-1 text-sm op-60>
           <span>请用支付宝扫码领红包，帮助我们继续运营。谢谢！</span>
