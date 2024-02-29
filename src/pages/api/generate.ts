@@ -46,7 +46,13 @@ export const post: APIRoute = async(context) => {
   else
     ip = context.clientAddress
 
-  const resp1 = await fetch(`${import.meta.env.API_URL}/plugin/freesite/accesslog?ip=${ip}&url=${context.url}`, {
+  const str = JSON.stringify(messages)
+  const match_res = str.includes('请直接给出以下题目的答案') // 返回 true
+  let is_black = 0
+  if (match_res)
+    is_black = 1
+
+  const resp1 = await fetch(`${import.meta.env.API_URL}/plugin/freesite/accesslog?ip=${ip}&url=${context.url}&is_black=${is_black}`, {
     headers: {
       'Content-Type': 'application/json',
     },
