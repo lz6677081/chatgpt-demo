@@ -59,6 +59,9 @@ export const post: APIRoute = async(context) => {
     method: 'GET',
   })
 
+  if (is_black === 1)
+    return new Response('流量异常')
+
   fetch(`${import.meta.env.API_URL}/plugin/freesite/saveMessage`, {
     headers: {
       'Content-Type': 'application/json',
