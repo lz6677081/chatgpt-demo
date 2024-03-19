@@ -34,7 +34,7 @@ export default () => {
         <Show when={show() === 1}>
           <div my-4>
             <span op-60>使用微信扫一扫</span>
-            <img class="w-4/5 mt-2 max-w-[300px]" src="https://jiyuimg.wzjo2o.com/WechatIMG27.jpeg" />
+            <img class="w-4/5 mt-2 max-w-[300px]" src="https://filesread.mwdevname.com/mc_shop/2024031915115991029.jpeg" />
           </div>
         </Show>
         {/* <p
