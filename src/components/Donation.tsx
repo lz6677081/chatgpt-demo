@@ -59,7 +59,7 @@ export default () => {
         </p>
       </div>
 
-      {/* <div onClick={() => { setZfb(zfb() ? 0 : 1) }}>
+      <div onClick={() => { setZfb(zfb() ? 0 : 1) }}>
         <p mt-1 text-sm op-60>
           <span>请用支付宝扫码领红包，帮助我们继续运营。谢谢！</span>
           <span class="border-1 px-2 py-1 mx-1 rounded-md transition-colors bg-slate/20 cursor-pointer hover:bg-slate/50">捐赠</span>
@@ -68,10 +68,10 @@ export default () => {
         <Show when={zfb() === 1}>
           <div my-4>
             <span op-60>使用支付宝扫一扫</span>
-            <img class="w-4/5 mt-2 max-w-[300px]" src="https://img.quanminzc.com/qmzc/202309/1695648323453.png" />
+            <img class="w-4/5 mt-2 max-w-[300px]" src="https://filesread.mwdevname.com/mc_shop/2024042612511388045.jpg" />
           </div>
         </Show>
-      </div> */}
+      </div>
 
     </div>
   )

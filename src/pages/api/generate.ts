@@ -59,6 +59,10 @@ export const post: APIRoute = async(context) => {
     method: 'GET',
   })
 
+  const res = await resp1.text()
+  const resJson1 = JSON.parse(res)
+  if (resJson1.code !== 200)
+    return new Response(resJson1.message)
   // if (is_black === 1)
   //   return new Response('流量异常')
 
@@ -73,11 +77,6 @@ export const post: APIRoute = async(context) => {
       site: 'aifree',
     }),
   })
-
-  const res = await resp1.text()
-  const resJson1 = JSON.parse(res)
-  if (resJson1.code !== 200)
-    return new Response(resJson1.message)
 
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-expect-error
