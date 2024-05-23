@@ -54,7 +54,7 @@ export default () => {
       <div>
         <p mt-1 text-sm op-60>
           <span>为了更好的运营下去,我们需要您的点赞和关注</span>
-          <a target="_blank" href="https://zhuanlan.zhihu.com/p/684069595" class="border-1 px-2 py-1 mx-1 rounded-md transition-colors bg-slate/20 cursor-pointer hover:bg-slate/50" rel="noreferrer">知乎链接</a>
+          <a target="_blank" href="https://www.zhihu.com/question/618119178/answer/3410326674" class="border-1 px-2 py-1 mx-1 rounded-md transition-colors bg-slate/20 cursor-pointer hover:bg-slate/50" rel="noreferrer">知乎链接</a>
           <span>🙏🏻</span>
         </p>
       </div>
