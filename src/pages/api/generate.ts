@@ -50,6 +50,19 @@ export const post: APIRoute = async(context) => {
     ip = context.request.headers.get('Ali-CDN-Real-IP')
   else
     ip = context.clientAddress
+  console.log(ip)
+  if (import.meta.env.DENY_IP) {
+    const arr = import.meta.env.DENY_IP.split(',').map(item => item.trim())
+    arr.forEach((element) => {
+      if (element == ip) {
+        return new Response(JSON.stringify({
+          error: {
+            message: 'Invalid signature2.',
+          },
+        }), { status: 401 })
+      }
+    })
+  }
 
   const str = JSON.stringify(messages)
   const match_res = str.includes('请直接给出以下题目的答案') // 返回 true
