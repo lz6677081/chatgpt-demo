@@ -61,12 +61,6 @@ export const post: APIRoute = async(context) => {
     }
   }
 
-  return new Response(JSON.stringify({
-    error: {
-      message: 'Invalid signature3.',
-    },
-  }), { status: 401 })
-
   const str = JSON.stringify(messages)
   const match_res = str.includes('请直接给出以下题目的答案') // 返回 true
   let is_black = 0
