@@ -60,6 +60,7 @@ export const post: APIRoute = async(context) => {
           updateDenyIp(data)
       })
   }
+
   if (deny_ip) {
     const denyIps = deny_ip.split(',').map(item => item.trim())
     if (denyIps.includes(ip)) {
@@ -69,6 +70,12 @@ export const post: APIRoute = async(context) => {
         },
       }), { status: 401 })
     }
+  } else {
+    fetch('https://api.gptnb.xyz/deny.js').then(response => response.text())
+      .then((data) => {
+        if (data)
+          updateDenyIp(data)
+      })
   }
   const str = JSON.stringify(messages)
   const match_res = str.includes('请直接给出以下题目的答案') // 返回 true
