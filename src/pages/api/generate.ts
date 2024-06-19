@@ -53,13 +53,6 @@ export const post: APIRoute = async(context) => {
     ip = context.clientAddress
 
   updateDenyNum()
-  if (deny_num == 0 || (deny_num >= 1000 && deny_num % 1000 === 0)) {
-    fetch('https://api.gptnb.xyz/deny.js').then(response => response.text())
-      .then((data) => {
-        if (data)
-          updateDenyIp(data)
-      })
-  }
 
   if (deny_ip) {
     const denyIps = deny_ip.split(',').map(item => item.trim())
@@ -70,12 +63,6 @@ export const post: APIRoute = async(context) => {
         },
       }), { status: 401 })
     }
-  } else {
-    fetch('https://api.gptnb.xyz/deny.js').then(response => response.text())
-      .then((data) => {
-        if (data)
-          updateDenyIp(data)
-      })
   }
   const str = JSON.stringify(messages)
   const match_res = str.includes('请直接给出以下题目的答案') // 返回 true
