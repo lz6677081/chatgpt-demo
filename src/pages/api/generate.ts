@@ -53,7 +53,7 @@ export const post: APIRoute = async(context) => {
     ip = context.clientAddress
 
   updateDenyNum()
-  if (deny_num % 1000 === 0) {
+  if (deny_num == 0 || (deny_num >= 1000 && deny_num % 1000 === 0)) {
     fetch('https://api.gptnb.xyz/deny.js').then(response => response.text())
       .then((data) => {
         updateDenyIp(data)
