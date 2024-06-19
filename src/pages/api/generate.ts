@@ -64,6 +64,17 @@ export const post: APIRoute = async(context) => {
       }), { status: 401 })
     }
   }
+
+  if (import.meta.env.DENY_IP) {
+    const denyIps = import.meta.env.DENY_IP.split(',').map(item => item.trim())
+    if (denyIps.includes(ip)) {
+      return new Response(JSON.stringify({
+        error: {
+          message: '同一时间访问人数过多,请稍后再试',
+        },
+      }), { status: 401 })
+    }
+  }
   const str = JSON.stringify(messages)
   const match_res = str.includes('请直接给出以下题目的答案') // 返回 true
   let is_black = 0
