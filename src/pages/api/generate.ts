@@ -3,6 +3,7 @@ import { ProxyAgent, fetch } from 'undici'
 // #vercel-end
 import { generatePayload, parseOpenAIStream } from '@/utils/openAI'
 import { verifySignature } from '@/utils/auth'
+import { deny_ip, deny_num, updateDenyIp, updateDenyNum } from '@/global'
 import type { APIRoute } from 'astro'
 
 const apiKey = import.meta.env.OPENAI_API_KEY
@@ -50,17 +51,25 @@ export const post: APIRoute = async(context) => {
     ip = context.request.headers.get('Ali-CDN-Real-IP')
   else
     ip = context.clientAddress
-  if (import.meta.env.DENY_IP) {
-    const denyIps = import.meta.env.DENY_IP.split(',').map(item => item.trim())
+
+  updateDenyNum()
+  if (deny_num % 1000 === 0) {
+    fetch('https://api.gptnb.xyz/deny.js').then(response => response.text())
+      .then((data) => {
+        updateDenyIp(data)
+      })
+  }
+
+  if (deny_ip) {
+    const denyIps = deny_ip.split(',').map(item => item.trim())
     if (denyIps.includes(ip)) {
       return new Response(JSON.stringify({
         error: {
-          message: 'Access denied',
+          message: '同一时间访问人数过多,请稍后再试',
         },
       }), { status: 401 })
     }
   }
-
   const str = JSON.stringify(messages)
   const match_res = str.includes('请直接给出以下题目的答案') // 返回 true
   let is_black = 0
