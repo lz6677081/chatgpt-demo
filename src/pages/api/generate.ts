@@ -47,7 +47,9 @@ export const post: APIRoute = async(context) => {
     initOptions.dispatcher = new ProxyAgent(httpsProxy)
   // #vercel-end
   let ip = ''
-  if (context.request.headers.get('Ali-CDN-Real-IP'))
+  if (context.request.headers.get('CF-Connecting-IP'))
+    ip = context.request.headers.get('CF-Connecting-IP')
+  else if (context.request.headers.get('Ali-CDN-Real-IP'))
     ip = context.request.headers.get('Ali-CDN-Real-IP')
   else
     ip = context.clientAddress
